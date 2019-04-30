@@ -40,7 +40,7 @@ class App extends React.Component {
   }
 
   handleAddingNewTicketToList(newTicket){
-    var newTicketId = v4()
+    var newTicketId = v4();
     var newMasterTicketList = Object.assign({}, this.state.masterTicketList, {
       [newTicketId]: newTicket
     });
